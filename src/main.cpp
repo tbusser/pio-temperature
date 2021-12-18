@@ -5,8 +5,8 @@
 #include <SPI.h>
 #include <Wire.h>
 
-#include "config.h"
-#include "web-server.h"
+#include "config.hpp"
+#include "web-server.hpp"
 
 /* -------------------------------------------------------------------------- */
 

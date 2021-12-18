@@ -5,7 +5,7 @@ and WIFI_PASSWORD. Without this file the project won't build.
 
 ============================================================================= */
 
-#include "web-server.h"
+#include "web-server.hpp"
 
 /* ========================================================================== */
 

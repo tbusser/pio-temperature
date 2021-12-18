@@ -8,8 +8,8 @@
 #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
 
-#include "credentials.h"
-#include "config.h"
+#include "credentials.hpp"
+#include "config.hpp"
 
 void startWebServer();
 
