@@ -4,17 +4,15 @@ on a 128x64 OLED display. What makes this project different from similar
 projects is a progress bar at the bottom of the display showing you how long
 until the readings are refreshed.
 
+In addition the project will spin up a webserver which serves simple configuration page. This page will allow you to change the sensor refresh rate from 2 seconds to anything up to 2 minutes. Changes to the refresh rate will go into effect after the next scheduled sensor reading. This is done to ensure the sensor is not asked for values in an interval shorter than 2 seconds.
+
 ## Used hardware
 - 1x ESP32 WROOM 4Mb Devkit V1
 - 1x DHT-22 sensor
 - 1x OLED display, 128 by 64 pixels, I2C compatible
 
 ## Required libraries
-The following libraries are required to run the project:
-- [DHT Sensor Library](https://github.com/adafruit/DHT-sensor-library)
-- [Adafruit Unified Sensor](https://github.com/adafruit/Adafruit_Sensor)
-- [Adafruit SSD1306](https://github.com/adafruit/Adafruit_SSD1306)
-- [Adafruit GFX Library](https://github.com/adafruit/Adafruit-GFX-Library)
+See the platformIO ini file for the required libraries.
 
 ## Setup
 The components are wired up as follows:
